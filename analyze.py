@@ -4,6 +4,9 @@ import sys
 
 clicks = []
 
+print("Analyzing clicks...")
+print("Press any key to stop analyzing")
+
 def on_key_pressed(key):
     # Done
     if len(clicks) > 0:

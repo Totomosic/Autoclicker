@@ -41,16 +41,16 @@ class Clicker(threading.Thread):
 PAUSE_KEY = KeyCode(char='s')
 EXIT_KEY = KeyCode(char='e')
 
-print("Python Autoclicker")
-print("Press s to start/stop clicking")
-print("Press e to exit")
-
 parser = argparse.ArgumentParser("Autoclicker")
 parser.add_argument("-i", "--interval", type=int, required=True, help="Time in milliseconds between clicks")
 parser.add_argument("-jmin", "--min-jitter", type=int, default=0, help="Time in milliseconds to subtract from interval")
 parser.add_argument("-jmax", "--max-jitter", type=int, default=0, help="Time in milliseconds to add to interval")
 
 args = parser.parse_args()
+
+print("Python Autoclicker")
+print("Press s to start/stop clicking")
+print("Press e to exit")
 
 interval = args.interval
 jitter = (args.min_jitter, args.max_jitter)
