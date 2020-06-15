@@ -9,6 +9,8 @@ print("Press any key to stop analyzing")
 
 def on_key_pressed(key):
     # Done
+    if key != pynput.keyboard.KeyCode(char='e'):
+        return
     if len(clicks) > 0:
         start_time = clicks[0]
         avg_interval = 0
